@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="fondo">
+    <ion-title>Formulario de registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card id="carta">
+    <ion-card-header>
+      <ion-card-title>Registrarse</ion-card-title>
+    </ion-card-header>
+    
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-input [(ngModel)]="user.usuario" label="Ingrese Nombre" labelPlacement="stacked" placeholder="..."></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="user.password" label="Ingrese clave" type="password" labelPlacement="stacked" placeholder="..."></ion-input>
+      </ion-item>
+      <ion-button (click)="confirm()" [routerLink]="['/login']" fill="solid" id="boton">Registrar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

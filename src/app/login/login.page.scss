@@ -1,0 +1,47 @@
+
+
+#cuadro{
+    text-align: center;
+    margin:auto;
+    margin-top: 120px;
+}
+
+
+#presentacion{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+#perfil{
+    margin: auto;
+    margin-top: 50px;
+}
+
+.lista{
+    padding-top: 50px;
+}
+
+#titulo{
+    text-align: center;
+}
+
+ion-toolbar{
+    background-color: var(--ion-color-fondo);
+}
+
+ion-content.background{
+    --background: url(../../assets/img/fondo_3.jpg) 0 0/100% 100% no-repeat;
+}
+
+
+#envio{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.item{
+    padding: 20px;
+    border-color: black;
+}
+

@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="fondo">
+    <ion-title id="titulo">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeXs="10" sizeMd="7" id="cuadro">
+        <div>
+          <ion-card>
+            <div id="presentacion">
+              RegistrAPP
+            </div>
+            <ion-card-header>
+              <ion-avatar id="perfil">
+                <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+              </ion-avatar>
+            </ion-card-header>
+          
+            <ion-card-content id="entradas">
+              <ion-list class="lista">
+                <ion-item class="item">
+                  <ion-input [(ngModel)]="user.usuario"  label="Usuario:" placeholder="Ingrese correo"></ion-input>
+                </ion-item>
+                <ion-item class="item">
+                  <ion-input [(ngModel)]="user.password" label="Clave:" type="password" placeholder="Ingrese clave"></ion-input>
+                </ion-item>
+              </ion-list>
+              <div id="envio">
+                <ion-button (click)="logear()" fill="solid">Ingresar</ion-button>
+                <ion-button [routerLink]="['/rg']" fill="solid">Registrarse</ion-button>
+                <ion-button [routerLink]="['/reestablecer']" fill="solid">Reestablecer clave</ion-button>
+              </div>
+            </ion-card-content>
+          </ion-card>         
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

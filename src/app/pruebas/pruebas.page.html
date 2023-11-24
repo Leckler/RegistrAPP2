@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Pruebas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <mat-slide-toggle (change)="toggleDarkMode($event)">Activar Modo Oscuro</mat-slide-toggle>
+
+  <div [class]="darkModeEnabled ? 'dark-theme' : 'light-theme'">
+  </div>
+  
+
+  
+
+
+
+</ion-content>
+
+

@@ -1,0 +1,23 @@
+Logros 
+
+-Se logro generar un QR en la pagina Docente
+-Se logro instalar un Escaner QR en el home (Decidi hacerle caso a la rubrica y dejarlo solo en el home)
+-Se logro generar un APK.realise
+-Se logro realizar la firma al APK
+
+
+
+Datos
+
+
+-El apk al abrirlo aparece en blanco, pienso que aun contiene el error previo de tener que reiniciar la pagina
+-Debido a que el trabajo no me convence demasiado lo guardare en otra rama de github por si tuviera que realizar muchos
+cambios en el examen.
+
+
+
+Faltas
+
+-Almacenar los alumnos en la lista de asistencia debido a errores relacionados a ingresados
+
+

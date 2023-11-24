@@ -1,0 +1,38 @@
+ion-toolbar{
+    background-color: var(--ion-color-fondo);
+}
+
+#DatosP{
+    margin-top: 10px;
+    color:whitesmoke;
+    font-size: 20px;
+}
+
+
+
+ion-content {
+    --background: url(../../assets/img/fondo_3.jpg) 0 0/100% 100% no-repeat;
+  }
+
+#H1{
+    color:whitesmoke;
+    font-size: 30px;
+}
+
+
+#columna1{
+    margin-top: 30px;
+}
+
+
+#columna2{
+    margin-top: 50px;
+}
+
+#boton{
+    margin-top: 20px;
+}
+
+#logo{
+    text-align: center;
+}

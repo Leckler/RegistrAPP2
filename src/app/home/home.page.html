@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="fondo">
+    <ion-title id="logo">
+      Pagina Principal
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bach">
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-button id="present-alert" size="default">Click Me</ion-button>
+    <ion-alert 
+      trigger="present-alert"
+      header="Bienvenido Usuario"
+      subHeader="{{ user.usuario }}"
+      message="This is an alert!">
+    </ion-alert>
+
+    <ion-label id="titular">RegistrAPP</ion-label>
+
+
+
+    <ion-thumbnail id="imagen">
+      <img alt="Silhouette of mountains" src="../../assets/img/circulo2.png">
+    </ion-thumbnail>
+
+    <div *ngIf="user">
+      <p>Usuario: {{ user?.idUsuario }}</p>
+    </div>
+
+    <div class="barcode-actions">
+      <ion-button ion-button (click)="escanearCodigoQR()">Escanear Código QR</ion-button>
+    </div>
+    <ion-button ion-button *ngIf="mostrarBotonConfirmar" (click)="confirmarAsistencia()">Confirmar Asistencia</ion-button>
+  </div>
+
+</ion-content>

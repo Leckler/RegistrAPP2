@@ -1,0 +1,68 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="fondo">
+    <ion-title id="titulo">Docente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeXs="12" sizeMd="12" sizeLg="12">
+        <div id="H1">
+          <ion-text>RegistrAPP</ion-text>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col sizeXs="12" sizeMd="12" sizeLg="12">
+        <div id="H2">
+          <ion-text id="H2">¡Bienvenido Docente!</ion-text>
+        </div>
+        <div>
+          <img id="Imagen" src="../../assets/img/qrt.avif" alt="">
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col sizeXs="12" sizeMd="12" sizeLg="12">
+        <div id="boton">
+          <ion-button fill="solid" (click)="generarQR()">Generar QR</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <div>
+      <qrcode [qrdata]="qrData" [elementType]="elementType"></qrcode>
+    </div>
+  </ion-grid> 
+</ion-content>
+
+<ion-footer>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="play-circle"></ion-icon>
+        Listen Now
+      </ion-tab-button>
+      <ion-tab-button tab="radio">
+        <ion-icon name="radio"></ion-icon>
+        Radio
+      </ion-tab-button>
+      <ion-tab-button tab="library">
+        <ion-icon name="library"></ion-icon>
+        Library
+      </ion-tab-button>
+      <ion-tab-button tab="search">
+        <ion-icon name="search"></ion-icon>
+        Search
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-footer>

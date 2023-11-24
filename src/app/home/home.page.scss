@@ -1,0 +1,49 @@
+
+
+ion-toolbar{
+  background-color: var(--ion-color-fondo);
+}
+
+ion-content.bach {
+  --background: url(../../assets/img/fondo_3.jpg) 0 0/100% 100% no-repeat;
+  background-size: cover; 
+}
+
+#titular{
+  font-size: 40px;
+  text-align: center;
+  margin:auto;
+  color: whitesmoke;
+}
+
+
+#present-alert{
+  margin-left: auto;
+  margin-top: 0px;
+}
+
+
+#welcome{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 210px;
+  color:whitesmoke;
+
+}
+
+
+
+ion-thumbnail {
+  --size: 200px;
+  --border-radius: 14px;
+  margin:auto;
+  margin-bottom: 100px;
+}
+
+#logo{
+  text-align: center;
+}
+
+#volver{
+  margin-right: auto;
+}
