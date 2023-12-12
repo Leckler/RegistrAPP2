@@ -19,6 +19,7 @@ export class HomePage {
   user: any = {};
   state: any;
   mostrarBotonConfirmar: boolean = false;
+  scannedDataList: any[] = []; 
   
 
   constructor(private activatedRouter: ActivatedRoute, private router: Router,private storage:Storage,private protect:AutenticService){
@@ -40,6 +41,7 @@ export class HomePage {
       const result = await BarcodeScanner.scan();
       console.log('Código escaneado:', result);
       this.mostrarBotonConfirmar = true;
+      this.scannedDataList.push(result);
     } catch (error) {
       console.error('Error al escanear código QR:', error);
     }

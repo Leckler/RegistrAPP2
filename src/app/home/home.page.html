@@ -37,7 +37,7 @@
       <p>Usuario: {{ user?.idUsuario }}</p>
     </div>
 
-    <div class="barcode-actions">
+    <div class="barcode-actions" id="botonT">
       <ion-button ion-button (click)="escanearCodigoQR()">Escanear Código QR</ion-button>
     </div>
     <ion-button ion-button *ngIf="mostrarBotonConfirmar" (click)="confirmarAsistencia()">Confirmar Asistencia</ion-button>
